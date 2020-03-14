@@ -1,0 +1,112 @@
+html {
+  font-family: sans-serif;
+}
+.title {
+  padding: 10px;
+  position: absolute;
+  background-color: #9154e0;
+  border-radius: 3px;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  height: 400px;
+}
+
+#one {
+  background-color: #ccc;
+  text-align: center;
+}
+
+#two {
+  background-color: #ccc;
+  text-align: center;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 10px;
+}
+
+.submit-btn {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding: 5px;
+}
+
+.score-one {
+  position: fixed;
+  bottom: auto;
+}
+
+.score-two {
+  position: fixed;
+  bottom: auto;
+}
+
+.rock {
+  width: 200px;
+  height: 80px;
+  background-color: white;
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #ccc;
+
+}
+
+.paper {
+  width: 200px;
+  height: 80px;
+  background-color: white;
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #ccc;
+  padding-bottom: 40px;
+
+}
+
+.scissors {
+  width: 200px;
+  height: 80px;
+  background-color: white;
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #ccc;
+
+}
+
+
+.select-one-box {
+  padding: 10px;
+  background-color: black;
+  border-radius: 3px;
+
+}
+
+.select-two-box {
+  padding: 10px;
+  background-color: black;
+  border-radius: 3px;
+}

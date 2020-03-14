@@ -1,20 +1,45 @@
 /* ------
 JQuery
 ---------*/
-$(document).ready(function(){
+var selected;
 
+$(document).ready(function(){
 
 $(".rock").on("click", function (e){
   $(".rock").css({'background-color': '#9154e0'})
-})
+  var selected = "Rock"
+  console.log(selected)
+  $(".final").replaceWith(`The Winner is ...<strong>${RockPaperScissors("Rock")}, I picked ${valReturn(generator)}</strong>`)
+  setTimeout(() => {
+    $(".rock").css({'background-color': '#ccc'})
+  }, 1000);
+  $(".main-rps").replaceWith(`<img src="images/${valReturn(generator)}.png" class="main-rps" width="300" height="250">`)
+
+});
 
 $(".paper").on("click", function (e){
   $(".paper").css({'background-color': '#9154e0'})
-})
+  var selected = "Paper"
+  console.log(selected)
+  $(".final").replaceWith(`The Winner is ...<strong>${RockPaperScissors("Paper")}, I picked ${valReturn(generator)}</strong>`)
+  setTimeout(() => {
+    $(".paper").css({'background-color': '#ccc'})
+  }, 1000);
+  $(".main-rps").replaceWith(`<img src="images/${valReturn(generator)}.png" class="main-rps" width="300" height="250">`)
+
+});
 
 $(".scissors").on("click", function (e){
   $(".scissors").css({'background-color': '#9154e0'})
-})
+  var selected = "Scissors"
+  console.log(selected)
+  $(".final").replaceWith(`The Winner is ...<strong>${RockPaperScissors("Scissors")}, I picked ${valReturn(generator)}</strong>`)
+  setTimeout(() => {
+    $(".scissors").css({'background-color': '#ccc'})
+  }, 1000);
+  $(".main-rps").replaceWith(`<img src="images/${valReturn(generator)}.png" class="main-rps" width="300" height="250">`)
+
+});
 
 
 });
@@ -78,14 +103,15 @@ var rpsGenerator = function (){
 ////The Actual Game Function
 ////
 
+var generator = rpsGenerator()
 var RockPaperScissors = function (selector){
-  var generator = rpsGenerator()
+  // var generator = rpsGenerator()
   if(selector === "Rock"){
       if(generator === "Paper"){
         return "HaHa I Beat You!"
       }
         if(generator === "Scissors"){
-        return "You Won!"
+          return "You Won!"
       }
       if(generator === "Rock"){
         return "We Tied!"
@@ -104,7 +130,7 @@ var RockPaperScissors = function (selector){
     }
   if(selector === "Scissors"){
      if(generator === "Rock"){
-        return "HaHa I Beat You!"
+      return "HaHa I Beat You!"
       }
         if(generator === "Paper"){
         return "You Won!"
@@ -114,12 +140,7 @@ var RockPaperScissors = function (selector){
       }
     }
 }
-var gameResult = RockPaperScissors("Rock")
-var finalVal = countKeeper(gameResult)
 
-
-var final = function (val){
+function valReturn (val) {
   return val
 }
-
-

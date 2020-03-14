@@ -46,13 +46,6 @@ h3{
   padding-bottom: 10px;
 }
 
-.submit-btn {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding: 5px;
-}
-
 .score-one {
   position: fixed;
   bottom: auto;
@@ -109,4 +102,20 @@ h3{
   padding: 10px;
   background-color: black;
   border-radius: 3px;
+}
+
+#start-game-btn {
+  width: 200px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding: 20px;
+  margin: auto;
+  background-color: #ccc;
+  border-radius: 10px;
+
+}
+
+.start-game-btn {
+  text-align: center;
 }

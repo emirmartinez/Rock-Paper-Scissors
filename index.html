@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock Paper Scissors!</title>
-  <script
-          src="https://code.jquery.com/jquery-3.3.1.js"
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
           integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
           crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
@@ -17,29 +16,66 @@
 
     <div class="row">
 
-      <div class="column" id="one">
-        <h2>Let's Play</h2>
-        <div class="select-one-box">
-        <img src="images/giphy.gif" class="main-rps" width="300" height="250">
+        <div class="column" id="one">
+          <h2>Let's Play</h2>
+          <div class="select-one-box">
+            <img src="images/giphy.gif" class="main-rps" width="280" height="230">
+          </div>
         </div>
+
+        <div class="column" id="two">
+          <h2>Select One</h2>
+
+          <div class="select-one-box">
+
+            <div class="rock"><img src="images/Rock.png" class="rock-img" width="50" height="50"></div>
+
+            <div class="paper"><img src="images/Paper.png"class="paper-img" width="50" height="50">
+            </div>
+
+            <div class="scissors"><img src="images/Scissors.png" class="scissors-img" width="50" height="50"></div>
+
+            <div class="reset"><p>Reset Score</p></div>
+          </div>
+        </div>
+        <div class="column" id="three">
+          <h2>Score Board</h2>
+          <div class="final-box">
+            <p class="first-result"></p>
+            <p class="second-result"></p>
+            <p class="third-result"></p>
+            <p class="fourth-result"></p>
+            <p class="fifth-result"></p>
+            <p class="sixth-result"></p>
+            <p class="seventh-result"></p>
+            <p class="eight-result"></p>
+            <p class="nineth-result"></p>
+            <p class="tenth-result"></p>
+         </div>
+        </div>
+    </div>
+
+    <div class="row-two">
+      <div class="first-colum" id="one-1">
+        <h2 class="compScore">Score: 0</h2>
       </div>
-
-      <div class="column" id="two">
-        <h2>Select One</h2>
-
-        <div class="select-one-box">
-        <div class="rock"><img src="images/Rock.png" class="rock-img" width="90" height="90"></div>
-
-        <div class="paper"><img src="images/Paper.png" class="paper-img" width="70" height="70"></div>
-
-        <div class="scissors"><img src="images/Scissors.png" class="scissors-img" width="70" height="70"></div>
-      </div>
+      <div class="second-colum" id="two-2">
+        <h2 class="userScore">My Score: 0</h2>
       </div>
     </div>
-    <div class="final-btn">
-    <p class="final">The Winner is... </p>
-    </div>
-  </div>
+    <!-- <div class="final-box">
+        <p class="first-result"></p>
+        <p class="second-result"></p>
+        <p class="third-result"></p>
+        <p class="fourth-result"></p>
+        <p class="fifth-result"></p>
+        <p class="sixth-result"></p>
+        <p class="seventh-result"></p>
+        <p class="eight-result"></p>
+        <p class="nineth-result"></p>
+        <p class="tenth-result"></p>
+    </div> -->
+        <p class="final">The Winner is... </p>
 
 <script src="main.js"></script>
 </body>
